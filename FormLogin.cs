@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static CuoiKy.Program;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace winform_test
@@ -15,17 +18,14 @@ namespace winform_test
     public partial class FormLogin : Form
     {
 
-        public class Account
-        {
-            public string Username { get; set; }
-            public string Password { get; set; }
-        }
-        static List<Account> accounts = new List<Account>();
+        
         public FormLogin()
         {
             InitializeComponent();
         }
 
+        
+        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -43,22 +43,23 @@ namespace winform_test
 
         public void button1_Click(object sender, EventArgs e)
         {
-            string username, password;
-            username = BoxUser.Text;
-            password = BoxPassword.Text;
-            bool check = false;
-            Account account = null;
-            foreach (var acc in accounts)
+            string username = BoxUser.Text;
+            string password = BoxPassword.Text;
+            Account account = GlobalData.BinarySearchTree.SearchByUser(username);
+
+            if (account != null && account.password == password)
             {
-                if (acc.Username == username && acc.Password == password)
-                {
-                    account = acc;
-                    check = true;
-                    break;
-                }                                                  
+                Test test = new Test();
+                test.Show();
+                this.Hide();
+                MessageBox.Show("Đăng nhập thành công!");
+                
             }
-            if (check == false)
-                MessageBox.Show("Tài khoản không tồn tại");
+            else
+            {
+                MessageBox.Show("Tên người dùng hoặc mật khẩu không chính xác!");
+            }
+                              
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -70,8 +71,7 @@ namespace winform_test
         {          
             FormRegister formRegister = new FormRegister();       
             formRegister.Show();
-            this.Close();
-
+            this.Hide();
         }
     }
 }
