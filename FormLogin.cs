@@ -48,7 +48,7 @@ namespace winform_test
             string password = BoxPassword.Text;
             Account account = GlobalData.BinarySearchTree.SearchByUser(username);
 
-            if (account != null && account.password == password)
+            if (account != null && account.password == password && account.username == username)
             {
                 Test test = new Test();
                 tempID = account.id;
@@ -60,8 +60,7 @@ namespace winform_test
             else
             {
                 MessageBox.Show("Tên người dùng hoặc mật khẩu không chính xác!");
-            }
-                              
+            }                             
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
