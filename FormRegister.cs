@@ -71,6 +71,12 @@ namespace winform_test
                 id = ulong.Parse(boxId.Text);
                 sex = boxSex.Text;
                 BinarySearchTree binarytree = new BinarySearchTree();
+
+                if (GlobalData.BinarySearchTree.IsUsernameExists(user))
+                {
+                    MessageBox.Show("Username đã tồn tại vui lòng chọn username khác.");
+                    return;
+                }
                 
                 if (
                     password == repassword && user != null && password != null &&
@@ -86,6 +92,7 @@ namespace winform_test
                     formLogin.Show();
                     this.Close();
                 }
+                
                 else
                 {                    
                     MessageBox.Show("Hãy kiểm tra lại thông tin!");                  

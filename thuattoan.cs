@@ -106,7 +106,12 @@ namespace CuoiKy
                     return SearchById(node.LeftNode, id);
                 else
                     return SearchById(node.RightNode, id);
-            }           
+            }
+            
+            public bool IsUsernameExists(string username)
+            {
+                return SearchByUser(username) != null;
+            }
         }
         
     }
