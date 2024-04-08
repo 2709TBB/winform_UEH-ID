@@ -108,5 +108,8 @@
   <ItemGroup>
     <None Include="Resources\name.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_UEH_xanh.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

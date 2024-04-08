@@ -18,14 +18,14 @@ namespace CuoiKy
             public string password { get; set; }
             public string fullname { get; set; }
             public string sex { get; set; }
-            public int id { get; set; }
+            public ulong id { get; set; }
             public int age { get; set; }
 
             public Account()
             {
                 this.username = null; this.password = null; this.sex = null; this.id = 0; this.age = 0; this.fullname = null;
             }
-            public Account(string user, string pass, string fullname, string sex, int id, int age)
+            public Account(string user, string pass, string fullname, string sex, ulong id, int age)
             {
                 this.username = user; this.password = pass; this.fullname = fullname;
                 this.sex = sex; this.id = id; this.age = age;
@@ -90,12 +90,12 @@ namespace CuoiKy
                     return SearchByUser(node.RightNode, username);
             }
 
-            public Account SearchById(int id)
+            public Account SearchById(ulong id)
             {
                 return SearchById(root, id);
             }
 
-            private Account SearchById(Node node, int id)
+            private Account SearchById(Node node, ulong id)
             {
                 if (node == null)
                     return null;
@@ -106,17 +106,7 @@ namespace CuoiKy
                     return SearchById(node.LeftNode, id);
                 else
                     return SearchById(node.RightNode, id);
-            }
-
-            //public void TraverseInOrder(Node parent)
-            //{
-            //    if (parent != null)
-            //    {
-            //        TraverseInOrder(parent.LeftNode);
-            //        Console.Write(parent.Data + "\n");
-            //        TraverseInOrder(parent.RightNode);
-            //    }
-            //}
+            }           
         }
         
     }

@@ -35,11 +35,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.butLogin = new System.Windows.Forms.Button();
             this.butRegister = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BoxUser
             // 
-            this.BoxUser.Location = new System.Drawing.Point(316, 174);
+            this.BoxUser.Location = new System.Drawing.Point(473, 207);
             this.BoxUser.Name = "BoxUser";
             this.BoxUser.Size = new System.Drawing.Size(189, 20);
             this.BoxUser.TabIndex = 0;
@@ -47,7 +49,7 @@
             // 
             // BoxPassword
             // 
-            this.BoxPassword.Location = new System.Drawing.Point(316, 200);
+            this.BoxPassword.Location = new System.Drawing.Point(473, 233);
             this.BoxPassword.Name = "BoxPassword";
             this.BoxPassword.Size = new System.Drawing.Size(189, 20);
             this.BoxPassword.TabIndex = 3;
@@ -56,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(229, 177);
+            this.label1.Location = new System.Drawing.Point(386, 210);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 4;
@@ -66,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 203);
+            this.label2.Location = new System.Drawing.Point(386, 236);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 5;
@@ -75,7 +77,7 @@
             // 
             // butLogin
             // 
-            this.butLogin.Location = new System.Drawing.Point(316, 226);
+            this.butLogin.Location = new System.Drawing.Point(473, 259);
             this.butLogin.Name = "butLogin";
             this.butLogin.Size = new System.Drawing.Size(79, 23);
             this.butLogin.TabIndex = 6;
@@ -85,7 +87,7 @@
             // 
             // butRegister
             // 
-            this.butRegister.Location = new System.Drawing.Point(426, 226);
+            this.butRegister.Location = new System.Drawing.Point(583, 259);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(79, 23);
             this.butRegister.TabIndex = 7;
@@ -93,11 +95,22 @@
             this.butRegister.UseVisualStyleBackColor = true;
             this.butRegister.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::winform_test.Properties.Resources.Logo_UEH_xanh;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(97, 61);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1093, 549);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.butRegister);
             this.Controls.Add(this.butLogin);
             this.Controls.Add(this.label2);
@@ -110,6 +123,7 @@
             this.Name = "FormLogin";
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,5 +137,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button butLogin;
         private System.Windows.Forms.Button butRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -21,7 +21,10 @@ namespace winform_test
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
+            Account loginaccout = GlobalData.BinarySearchTree.SearchById(FormLogin.tempID);
+            ShowUserInfo(loginaccout);
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -31,17 +34,17 @@ namespace winform_test
 
         private void signOut_Click(object sender, EventArgs e)
         {
-            // Trong mã của bạn, bạn có thể truy cập FormLogin thông qua lớp Application.
+            
             FormLogin loginForm = null;
 
-            // Lặp qua tất cả các form mà ứng dụng đang chạy
+            
             foreach (Form form in Application.OpenForms)
             {
-                // Kiểm tra xem form hiện tại có phải là FormLogin hay không
+                
                 if (form is FormLogin)
                 {
-                    loginForm = (FormLogin)form; // Ép kiểu form thành FormLogin
-                    break; // Dừng vòng lặp nếu tìm thấy FormLogin
+                    loginForm = (FormLogin)form; 
+                    break; 
                 }
             }       
             loginForm.Show();
@@ -50,8 +53,8 @@ namespace winform_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int searchID;
-            if (!int.TryParse(SearchTextBox.Text, out searchID))
+            ulong searchID;
+            if (!ulong.TryParse(SearchTextBox.Text, out searchID))
             {
                 MessageBox.Show("Vui lòng nhập một ID hoặc số căn cước hợp lệ.");
                 return;

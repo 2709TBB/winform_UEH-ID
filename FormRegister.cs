@@ -58,8 +58,8 @@ namespace winform_test
         private void Confirm_Click(object sender, EventArgs e)
         {
             string user, password, repassword, fullname, sex;
-            int age, id;
-            
+            int age;
+            ulong id;
 
             try
             {
@@ -68,7 +68,7 @@ namespace winform_test
                 repassword = boxReEnterPassRegister.Text;
                 fullname = boxName.Text;
                 age = int.Parse(boxAge.Text);
-                id = int.Parse(boxId.Text);
+                id = ulong.Parse(boxId.Text);
                 sex = boxSex.Text;
                 BinarySearchTree binarytree = new BinarySearchTree();
                 

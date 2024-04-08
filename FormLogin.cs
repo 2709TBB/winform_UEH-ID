@@ -24,7 +24,8 @@ namespace winform_test
             InitializeComponent();
         }
 
-        
+        public static ulong tempID = 0;
+
         
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -50,6 +51,7 @@ namespace winform_test
             if (account != null && account.password == password)
             {
                 Test test = new Test();
+                tempID = account.id;
                 test.Show();
                 this.Hide();
                 MessageBox.Show("Đăng nhập thành công!");
