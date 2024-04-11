@@ -17,7 +17,7 @@ namespace winform_test
         public FormRegister()
         {
             InitializeComponent();
-            
+            this.BackColor = ColorTranslator.FromHtml("#DADFD8");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -105,6 +105,15 @@ namespace winform_test
             }
             
         }
-        
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            this.panel1.BackColor = ColorTranslator.FromHtml("#5A6156");
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

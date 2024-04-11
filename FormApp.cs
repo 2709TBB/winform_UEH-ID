@@ -18,6 +18,7 @@ namespace winform_test
         public Test()
         {
             InitializeComponent();
+            this.BackColor = ColorTranslator.FromHtml("#DADFD8");
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -77,7 +78,7 @@ namespace winform_test
         private void ShowUserInfo(Account account)
         {
             UsernameLabel.Text = "Username: " + account.username;
-            FullnameLabel.Text = "Full Name: " + account.fullname;
+            FullnameLabel.Text = "Họ và Tên: " + account.fullname;
             AgeLabel.Text = "Tuổi: " + account.age;
             SexLabel.Text = "Giới tính: " + account.sex;
             IdLabel.Text = "Số căn cước công dân: " + account.id;

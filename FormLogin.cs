@@ -22,7 +22,10 @@ namespace winform_test
         public FormLogin()
         {
             InitializeComponent();
+            this.BackColor = ColorTranslator.FromHtml("#DADFD8");
+            
         }
+
 
         public static ulong tempID = 0;
 
@@ -73,6 +76,13 @@ namespace winform_test
             FormRegister formRegister = new FormRegister();       
             formRegister.Show();
             this.Hide();
+        }
+
+        
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            this.panel1.BackColor = ColorTranslator.FromHtml("#5A6156");
         }
     }
 }

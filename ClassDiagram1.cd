@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CuoiKy.Program">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="CuoiKy.Program.Account">
+        <TypeIdentifier>
+          <NewMemberFileName>thuattoan.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="CuoiKy.Program.Node">
+        <TypeIdentifier>
+          <NewMemberFileName>thuattoan.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="CuoiKy.Program.BinarySearchTree">
+        <TypeIdentifier>
+          <NewMemberFileName>thuattoan.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>thuattoan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="winform_test.Program">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="winform_test.GlobalData">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

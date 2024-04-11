@@ -133,7 +133,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::winform_test.Properties.Resources.Logo_UEH_xanh;
+            this.pictureBox2.Image = global::winform_test.Properties.Resources.logo_dsa1;
             this.pictureBox2.Location = new System.Drawing.Point(12, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(97, 61);

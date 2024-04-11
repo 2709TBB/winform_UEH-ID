@@ -35,30 +35,32 @@
             this.label2 = new System.Windows.Forms.Label();
             this.butLogin = new System.Windows.Forms.Button();
             this.butRegister = new System.Windows.Forms.Button();
+            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BoxUser
             // 
-            this.BoxUser.Location = new System.Drawing.Point(473, 207);
+            this.BoxUser.Location = new System.Drawing.Point(445, 207);
             this.BoxUser.Name = "BoxUser";
-            this.BoxUser.Size = new System.Drawing.Size(189, 20);
+            this.BoxUser.Size = new System.Drawing.Size(255, 20);
             this.BoxUser.TabIndex = 0;
             this.BoxUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // BoxPassword
             // 
-            this.BoxPassword.Location = new System.Drawing.Point(473, 233);
+            this.BoxPassword.Location = new System.Drawing.Point(445, 262);
             this.BoxPassword.Name = "BoxPassword";
-            this.BoxPassword.Size = new System.Drawing.Size(189, 20);
+            this.BoxPassword.Size = new System.Drawing.Size(255, 20);
             this.BoxPassword.TabIndex = 3;
             this.BoxPassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(386, 210);
+            this.label1.Location = new System.Drawing.Point(527, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 4;
@@ -68,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(386, 236);
+            this.label2.Location = new System.Drawing.Point(538, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 5;
@@ -77,7 +79,7 @@
             // 
             // butLogin
             // 
-            this.butLogin.Location = new System.Drawing.Point(473, 259);
+            this.butLogin.Location = new System.Drawing.Point(480, 303);
             this.butLogin.Name = "butLogin";
             this.butLogin.Size = new System.Drawing.Size(79, 23);
             this.butLogin.TabIndex = 6;
@@ -87,7 +89,7 @@
             // 
             // butRegister
             // 
-            this.butRegister.Location = new System.Drawing.Point(583, 259);
+            this.butRegister.Location = new System.Drawing.Point(592, 303);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(79, 23);
             this.butRegister.TabIndex = 7;
@@ -95,9 +97,14 @@
             this.butRegister.UseVisualStyleBackColor = true;
             this.butRegister.Click += new System.EventHandler(this.button2_Click);
             // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 10;
+            this.elipseControl1.TargetControl = this.BoxPassword;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::winform_test.Properties.Resources.Logo_UEH_xanh;
+            this.pictureBox1.Image = global::winform_test.Properties.Resources.logo_dsa1;
             this.pictureBox1.Location = new System.Drawing.Point(12, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(97, 61);
@@ -105,10 +112,19 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(357, 115);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(424, 302);
+            this.panel1.TabIndex = 9;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 549);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.butRegister);
@@ -117,6 +133,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BoxPassword);
             this.Controls.Add(this.BoxUser);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -138,5 +155,7 @@
         private System.Windows.Forms.Button butLogin;
         private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ElipseToolDemo.ElipseControl elipseControl1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

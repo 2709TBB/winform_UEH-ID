@@ -63,6 +63,26 @@ namespace winform_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_dsa {
+            get {
+                object obj = ResourceManager.GetObject("logo_dsa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_dsa1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_dsa1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_UEH_xanh {
             get {
                 object obj = ResourceManager.GetObject("Logo_UEH_xanh", resourceCulture);
