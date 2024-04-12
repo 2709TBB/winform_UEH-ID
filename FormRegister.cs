@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static CuoiKy.Program;
+using System.Runtime.InteropServices;
 
 namespace winform_test
 {
     public partial class FormRegister : Form
     {
+
         
+
         public FormRegister()
         {
             InitializeComponent();
-            this.BackColor = ColorTranslator.FromHtml("#DADFD8");
+            this.BackColor = ColorTranslator.FromHtml("#AFEEEE");
+            this.panel1.BackColor = ColorTranslator.FromHtml("#00CED1");
+            FormEdit.CustomizeForm(this);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -108,7 +113,7 @@ namespace winform_test
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.panel1.BackColor = ColorTranslator.FromHtml("#5A6156");
+            
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static CuoiKy.Program;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace winform_test
@@ -22,8 +23,11 @@ namespace winform_test
         public FormLogin()
         {
             InitializeComponent();
-            this.BackColor = ColorTranslator.FromHtml("#DADFD8");
-            
+            this.BackColor = ColorTranslator.FromHtml("#AFEEEE");
+            this.panel1.BackColor = ColorTranslator.FromHtml("#00CED1"); 
+            label1.BackColor = panel1.BackColor;
+            label2.BackColor = panel1.BackColor;
+            FormEdit.CustomizeForm(this);
         }
 
 
@@ -32,17 +36,17 @@ namespace winform_test
         
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         public void button1_Click(object sender, EventArgs e)
@@ -82,7 +86,12 @@ namespace winform_test
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.panel1.BackColor = ColorTranslator.FromHtml("#5A6156");
+            
+        }
+
+        private void BoxPassword_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

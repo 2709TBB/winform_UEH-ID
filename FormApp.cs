@@ -18,7 +18,8 @@ namespace winform_test
         public Test()
         {
             InitializeComponent();
-            this.BackColor = ColorTranslator.FromHtml("#DADFD8");
+            this.BackColor = ColorTranslator.FromHtml("#AFEEEE");
+            FormEdit.CustomizeForm(this);
         }
         private void Form1_Load(object sender, EventArgs e)
         {

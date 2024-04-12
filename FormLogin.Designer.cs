@@ -35,7 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.butLogin = new System.Windows.Forms.Button();
             this.butRegister = new System.Windows.Forms.Button();
-            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +55,7 @@
             this.BoxPassword.Size = new System.Drawing.Size(255, 20);
             this.BoxPassword.TabIndex = 3;
             this.BoxPassword.UseSystemPasswordChar = true;
+            this.BoxPassword.TextChanged += new System.EventHandler(this.BoxPassword_TextChanged);
             // 
             // label1
             // 
@@ -97,11 +97,6 @@
             this.butRegister.UseVisualStyleBackColor = true;
             this.butRegister.Click += new System.EventHandler(this.button2_Click);
             // 
-            // elipseControl1
-            // 
-            this.elipseControl1.CornerRadius = 10;
-            this.elipseControl1.TargetControl = this.BoxPassword;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::winform_test.Properties.Resources.logo_dsa1;
@@ -134,10 +129,11 @@
             this.Controls.Add(this.BoxPassword);
             this.Controls.Add(this.BoxUser);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -155,7 +151,7 @@
         private System.Windows.Forms.Button butLogin;
         private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ElipseToolDemo.ElipseControl elipseControl1;
+        
         private System.Windows.Forms.Panel panel1;
     }
 }
