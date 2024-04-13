@@ -209,7 +209,7 @@
             this.panel1.Controls.Add(this.boxAge);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.boxSex);
-            this.panel1.Location = new System.Drawing.Point(362, 35);
+            this.panel1.Location = new System.Drawing.Point(342, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(409, 476);
             this.panel1.TabIndex = 16;

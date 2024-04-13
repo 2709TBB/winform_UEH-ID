@@ -42,7 +42,7 @@
             // 
             // BoxUser
             // 
-            this.BoxUser.Location = new System.Drawing.Point(445, 207);
+            this.BoxUser.Location = new System.Drawing.Point(422, 207);
             this.BoxUser.Name = "BoxUser";
             this.BoxUser.Size = new System.Drawing.Size(255, 20);
             this.BoxUser.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // BoxPassword
             // 
-            this.BoxPassword.Location = new System.Drawing.Point(445, 262);
+            this.BoxPassword.Location = new System.Drawing.Point(422, 262);
             this.BoxPassword.Name = "BoxPassword";
             this.BoxPassword.Size = new System.Drawing.Size(255, 20);
             this.BoxPassword.TabIndex = 3;
@@ -60,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(527, 191);
+            this.label1.Location = new System.Drawing.Point(504, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 4;
@@ -70,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(538, 246);
+            this.label2.Location = new System.Drawing.Point(515, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 5;
@@ -79,7 +79,7 @@
             // 
             // butLogin
             // 
-            this.butLogin.Location = new System.Drawing.Point(480, 303);
+            this.butLogin.Location = new System.Drawing.Point(457, 303);
             this.butLogin.Name = "butLogin";
             this.butLogin.Size = new System.Drawing.Size(79, 23);
             this.butLogin.TabIndex = 6;
@@ -89,7 +89,7 @@
             // 
             // butRegister
             // 
-            this.butRegister.Location = new System.Drawing.Point(592, 303);
+            this.butRegister.Location = new System.Drawing.Point(569, 303);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(79, 23);
             this.butRegister.TabIndex = 7;
@@ -109,7 +109,7 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(357, 115);
+            this.panel1.Location = new System.Drawing.Point(334, 115);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(424, 302);
             this.panel1.TabIndex = 9;
