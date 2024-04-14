@@ -46,6 +46,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,34 +54,38 @@
             // boxName
             // 
             this.boxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.boxName.Location = new System.Drawing.Point(136, 98);
+            this.boxName.Location = new System.Drawing.Point(181, 121);
+            this.boxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxName.Name = "boxName";
-            this.boxName.Size = new System.Drawing.Size(145, 20);
+            this.boxName.Size = new System.Drawing.Size(193, 22);
             this.boxName.TabIndex = 0;
             this.boxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // boxAge
             // 
-            this.boxAge.Location = new System.Drawing.Point(136, 137);
+            this.boxAge.Location = new System.Drawing.Point(181, 169);
+            this.boxAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxAge.Name = "boxAge";
-            this.boxAge.Size = new System.Drawing.Size(145, 20);
+            this.boxAge.Size = new System.Drawing.Size(192, 22);
             this.boxAge.TabIndex = 1;
             this.boxAge.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // boxSex
             // 
-            this.boxSex.Location = new System.Drawing.Point(136, 176);
+            this.boxSex.Location = new System.Drawing.Point(181, 217);
+            this.boxSex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxSex.Name = "boxSex";
-            this.boxSex.Size = new System.Drawing.Size(145, 20);
+            this.boxSex.Size = new System.Drawing.Size(192, 22);
             this.boxSex.TabIndex = 2;
             this.boxSex.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 238);
+            this.label1.Location = new System.Drawing.Point(177, 293);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tên đăng nhập";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -88,9 +93,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(133, 277);
+            this.label2.Location = new System.Drawing.Point(177, 341);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật khẩu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -98,18 +104,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(133, 316);
+            this.label3.Location = new System.Drawing.Point(177, 389);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nhập lại mật khẩu";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(136, 358);
+            this.Confirm.Location = new System.Drawing.Point(181, 441);
+            this.Confirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Confirm.Name = "Confirm";
-            this.Confirm.Size = new System.Drawing.Size(75, 23);
+            this.Confirm.Size = new System.Drawing.Size(100, 28);
             this.Confirm.TabIndex = 6;
             this.Confirm.Text = "Đăng ký";
             this.Confirm.UseVisualStyleBackColor = true;
@@ -117,49 +125,55 @@
             // 
             // boxId
             // 
-            this.boxId.Location = new System.Drawing.Point(136, 215);
+            this.boxId.Location = new System.Drawing.Point(181, 265);
+            this.boxId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxId.Name = "boxId";
-            this.boxId.Size = new System.Drawing.Size(145, 20);
+            this.boxId.Size = new System.Drawing.Size(192, 22);
             this.boxId.TabIndex = 7;
             // 
             // boxUserRegister
             // 
-            this.boxUserRegister.Location = new System.Drawing.Point(136, 254);
+            this.boxUserRegister.Location = new System.Drawing.Point(181, 313);
+            this.boxUserRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxUserRegister.Name = "boxUserRegister";
-            this.boxUserRegister.Size = new System.Drawing.Size(145, 20);
+            this.boxUserRegister.Size = new System.Drawing.Size(192, 22);
             this.boxUserRegister.TabIndex = 8;
             // 
             // boxPassRegister
             // 
-            this.boxPassRegister.Location = new System.Drawing.Point(136, 293);
+            this.boxPassRegister.Location = new System.Drawing.Point(181, 361);
+            this.boxPassRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxPassRegister.Name = "boxPassRegister";
-            this.boxPassRegister.Size = new System.Drawing.Size(145, 20);
+            this.boxPassRegister.Size = new System.Drawing.Size(192, 22);
             this.boxPassRegister.TabIndex = 9;
             this.boxPassRegister.UseSystemPasswordChar = true;
             // 
             // boxReEnterPassRegister
             // 
-            this.boxReEnterPassRegister.Location = new System.Drawing.Point(136, 332);
+            this.boxReEnterPassRegister.Location = new System.Drawing.Point(181, 409);
+            this.boxReEnterPassRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boxReEnterPassRegister.Name = "boxReEnterPassRegister";
-            this.boxReEnterPassRegister.Size = new System.Drawing.Size(145, 20);
+            this.boxReEnterPassRegister.Size = new System.Drawing.Size(192, 22);
             this.boxReEnterPassRegister.TabIndex = 10;
             this.boxReEnterPassRegister.UseSystemPasswordChar = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 82);
+            this.label4.Location = new System.Drawing.Point(177, 101);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Họ và tên";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(133, 121);
+            this.label5.Location = new System.Drawing.Point(177, 149);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
+            this.label5.Size = new System.Drawing.Size(34, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Tuổi";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -167,27 +181,30 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(133, 160);
+            this.label6.Location = new System.Drawing.Point(177, 197);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.Size = new System.Drawing.Size(54, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "Giới tính";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(133, 199);
+            this.label7.Location = new System.Drawing.Point(177, 245);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 13);
+            this.label7.Size = new System.Drawing.Size(81, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Số căn cước";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::winform_test.Properties.Resources.logo_dsa1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 26);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 61);
+            this.pictureBox1.Size = new System.Drawing.Size(129, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -209,21 +226,34 @@
             this.panel1.Controls.Add(this.boxAge);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.boxSex);
-            this.panel1.Location = new System.Drawing.Point(342, 35);
+            this.panel1.Location = new System.Drawing.Point(456, 43);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 476);
+            this.panel1.Size = new System.Drawing.Size(545, 586);
             this.panel1.TabIndex = 16;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1193, 601);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 549);
+            this.ClientSize = new System.Drawing.Size(1457, 676);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -255,5 +285,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

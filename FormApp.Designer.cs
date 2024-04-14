@@ -40,15 +40,17 @@
             this.buttonSearch = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // signOut
             // 
-            this.signOut.Location = new System.Drawing.Point(978, 455);
+            this.signOut.Location = new System.Drawing.Point(1300, 601);
+            this.signOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signOut.Name = "signOut";
-            this.signOut.Size = new System.Drawing.Size(75, 23);
+            this.signOut.Size = new System.Drawing.Size(100, 28);
             this.signOut.TabIndex = 0;
             this.signOut.Text = "Đăng xuất";
             this.signOut.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             this.UsernameLabel.AutoSize = true;
             this.UsernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLabel.Location = new System.Drawing.Point(221, 199);
+            this.UsernameLabel.Location = new System.Drawing.Point(295, 245);
+            this.UsernameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(97, 24);
+            this.UsernameLabel.Size = new System.Drawing.Size(124, 29);
             this.UsernameLabel.TabIndex = 3;
             this.UsernameLabel.Text = "Username";
             // 
@@ -68,9 +71,10 @@
             // 
             this.FullnameLabel.AutoSize = true;
             this.FullnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FullnameLabel.Location = new System.Drawing.Point(221, 224);
+            this.FullnameLabel.Location = new System.Drawing.Point(295, 276);
+            this.FullnameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FullnameLabel.Name = "FullnameLabel";
-            this.FullnameLabel.Size = new System.Drawing.Size(98, 24);
+            this.FullnameLabel.Size = new System.Drawing.Size(123, 29);
             this.FullnameLabel.TabIndex = 4;
             this.FullnameLabel.Text = "Họ và Tên";
             // 
@@ -78,9 +82,10 @@
             // 
             this.AgeLabel.AutoSize = true;
             this.AgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgeLabel.Location = new System.Drawing.Point(221, 251);
+            this.AgeLabel.Location = new System.Drawing.Point(295, 309);
+            this.AgeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AgeLabel.Name = "AgeLabel";
-            this.AgeLabel.Size = new System.Drawing.Size(48, 24);
+            this.AgeLabel.Size = new System.Drawing.Size(62, 29);
             this.AgeLabel.TabIndex = 5;
             this.AgeLabel.Text = "Tuổi";
             this.AgeLabel.Click += new System.EventHandler(this.AgeLabel_Click);
@@ -89,9 +94,10 @@
             // 
             this.SexLabel.AutoSize = true;
             this.SexLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SexLabel.Location = new System.Drawing.Point(221, 279);
+            this.SexLabel.Location = new System.Drawing.Point(295, 343);
+            this.SexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SexLabel.Name = "SexLabel";
-            this.SexLabel.Size = new System.Drawing.Size(86, 24);
+            this.SexLabel.Size = new System.Drawing.Size(111, 29);
             this.SexLabel.TabIndex = 6;
             this.SexLabel.Text = "Giới Tính";
             // 
@@ -99,33 +105,39 @@
             // 
             this.IdLabel.AutoSize = true;
             this.IdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdLabel.Location = new System.Drawing.Point(221, 305);
+            this.IdLabel.Location = new System.Drawing.Point(295, 375);
+            this.IdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IdLabel.Name = "IdLabel";
-            this.IdLabel.Size = new System.Drawing.Size(176, 24);
+            this.IdLabel.Size = new System.Drawing.Size(218, 29);
             this.IdLabel.TabIndex = 7;
             this.IdLabel.Text = "Căn cước công dân";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 431);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 573);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 13);
+            this.label1.Size = new System.Drawing.Size(192, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Tìm thông tin người dùng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // SearchTextBox
             // 
-            this.SearchTextBox.Location = new System.Drawing.Point(206, 428);
+            this.SearchTextBox.Location = new System.Drawing.Point(275, 571);
+            this.SearchTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchTextBox.Name = "SearchTextBox";
-            this.SearchTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SearchTextBox.Size = new System.Drawing.Size(132, 22);
             this.SearchTextBox.TabIndex = 9;
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(206, 455);
+            this.buttonSearch.Location = new System.Drawing.Point(275, 601);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearch.Size = new System.Drawing.Size(100, 28);
             this.buttonSearch.TabIndex = 10;
             this.buttonSearch.Text = "Tìm kiếm";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -134,9 +146,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::winform_test.Properties.Resources.logo_dsa1;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 26);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(97, 61);
+            this.pictureBox2.Size = new System.Drawing.Size(129, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -144,20 +157,32 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::winform_test.Properties.Resources.user1;
-            this.pictureBox1.Location = new System.Drawing.Point(454, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(605, 54);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(185, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(247, 174);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1193, 601);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Test
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1093, 549);
+            this.ClientSize = new System.Drawing.Size(1457, 676);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.SearchTextBox);
@@ -171,6 +196,7 @@
             this.Controls.Add(this.signOut);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Test";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -196,6 +222,7 @@
         private System.Windows.Forms.TextBox SearchTextBox;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

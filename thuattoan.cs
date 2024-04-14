@@ -112,6 +112,15 @@ namespace CuoiKy
             {
                 return SearchByUser(username) != null;
             }
+
+            public void ExitApp()
+            {
+                DialogResult result = MessageBox.Show("Bạn muốn thoát chương trình?", "Thoát", MessageBoxButtons.YesNo);
+                if ( result == DialogResult.Yes )
+                {
+                    Application.Exit();
+                }
+            }
         }
         
     }

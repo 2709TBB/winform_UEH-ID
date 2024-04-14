@@ -120,5 +120,11 @@ namespace winform_test
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BinarySearchTree exit = new BinarySearchTree();
+            exit.ExitApp();
+        }
     }
 }
