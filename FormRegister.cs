@@ -82,12 +82,16 @@ namespace winform_test
                     MessageBox.Show("Username đã tồn tại vui lòng chọn username khác.");
                     return;
                 }
-                
+                if (GlobalData.BinarySearchTree.IsIdExists(id))
+                {
+                    MessageBox.Show("ID đã tồn tại vui lòng nhập lại ID khác.");
+                    return;
+                }
                 if (
                     password == repassword && user != null && password != null &&
                     repassword != null && fullname != null && age > 0 &&
                     id > 0 && sex != null && int.TryParse(boxAge.Text, out age) &&
-                    id != null
+                    id != null 
                     )
                 {
                     Account newAccount = new Account(user, password, fullname, sex, id, age);

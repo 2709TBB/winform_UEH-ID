@@ -113,6 +113,10 @@ namespace CuoiKy
                 return SearchByUser(username) != null;
             }
 
+            public bool IsIdExists(ulong id)
+            {
+                return SearchById(id) != null;
+            }
             public void ExitApp()
             {
                 DialogResult result = MessageBox.Show("Bạn muốn thoát chương trình?", "Thoát", MessageBoxButtons.YesNo);
